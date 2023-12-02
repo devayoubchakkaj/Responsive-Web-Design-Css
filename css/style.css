@@ -39,6 +39,17 @@
     .info .two {
         color : black;
         font-size: 12px;
+
+    }
+    .nav{
+        display:none;
+
+    }
+
+    .fa-bars{
+        font-size: 2rem;
+        color:rgb(196, 0, 121);
+        cursor: pointer;
     }
     
     .disc .two{
@@ -373,7 +384,9 @@
         text-decoration:none;
         color: rgb(39, 39, 39);
     }
-    
+    .fa-bars{
+        display: none;
+    }
     .start{
         background-color: blueviolet;
         display:flex;
@@ -658,7 +671,9 @@
         text-decoration:none;
         color: rgb(39, 39, 39);
     }
-    
+    .fa-bars{
+        display: none;
+    }
     .start{
         background-color: blueviolet;
         display:flex;
