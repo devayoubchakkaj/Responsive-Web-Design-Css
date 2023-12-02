@@ -17,6 +17,13 @@
     margin-bottom:8px;
 }
 
+.favicon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+ }
+
 @media only screen and (max-width:600px){
 
     
