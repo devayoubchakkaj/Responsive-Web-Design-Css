@@ -42,15 +42,97 @@
     color: black;
     font-size: 12px;
   }
-  .nav {
-    display: none;
-  }
 
   .fa-bars {
-    font-size: 2rem;
+    font-size: 1rem;
     color: rgb(196, 0, 121);
     cursor: pointer;
   }
+  .fa-bars {
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    transition: 0.2s;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+  .nav ul {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+  .nav ul li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .nav ul li a {
+    font-size: 3rem;
+    display: block;
+  }
+
+  /**/
+  .fa-bars {
+    color: rgb(196, 0, 121);
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+    transition: 0.2s;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+    color: rgb(196, 0, 121);
+  }
+
+  .fa-bars {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 95%;
+    margin-left: 2.5%;
+    background: #f8eeff;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+
+  .nav ul {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+  .nav ul li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .nav ul li a {
+    font-size: 24px;
+    display: block;
+  }
+
+  .nav ul li a:hover {
+    color: rgb(196, 0, 121);
+  }
+
+  .nav-toggle {
+    top: 5rem;
+    opacity: 1;
+  }
+  /**/
 
   .disc .two {
     color: white;
@@ -170,6 +252,8 @@
   }
   .info a span {
     background: linear-gradient(to right, rgb(0, 132, 255), rgb(255, 0, 242));
+    background: linear-gradient(to right, rgb(0, 132, 255), rgb(255, 0, 242));
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     text-wrap: nowrap;
@@ -259,7 +343,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 40px 20px;
-    background-color: rgb(190, 190, 190);
+    background-color: #a9a9a9;
     width: 100%;
     align-items: center;
   }
@@ -312,7 +396,58 @@
     margin: 4px 5px;
     color: rgb(39, 39, 39);
   }
+  /**/
+  .fa-bars {
+    color: rgb(196, 0, 121);
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+    transition: 0.2s;
+  }
 
+  .fa-times {
+    transform: rotate(180deg);
+    color: rgb(196, 0, 121);
+  }
+
+  .fa-bars {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 95%;
+    margin-left: 2.5%;
+    background: #f8eeff;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+
+  .nav ul {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+  .nav ul li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .nav ul li a {
+    font-size: 24px;
+    display: block;
+  }
+
+  .nav ul li a:hover {
+    color: rgb(196, 0, 121);
+  }
+
+  .nav-toggle {
+    top: 5rem;
+    opacity: 1;
+  }
+  /**/
   .info .two {
     color: black;
     font-size: 12px;
@@ -355,9 +490,7 @@
     text-decoration: none;
     color: rgb(39, 39, 39);
   }
-  .fa-bars {
-    display: none;
-  }
+
   .start {
     background-color: blueviolet;
     display: flex;
@@ -434,8 +567,10 @@
   }
   .info a span {
     background: linear-gradient(to right, rgb(0, 132, 255), rgb(255, 0, 242));
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-wrap: nowrap;
   }
 
   .cards {
@@ -512,7 +647,7 @@
     display: flex;
     justify-content: space-around;
     padding: 40px 20px;
-    background-color: rgb(190, 190, 190);
+    background-color: #a9a9a9;
   }
   footer div p {
     text-align: center;
@@ -684,8 +819,10 @@
   }
   .info a span {
     background: linear-gradient(to right, rgb(0, 132, 255), rgb(255, 0, 242));
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-wrap: nowrap;
   }
 
   .cards {
@@ -760,7 +897,7 @@
     display: flex;
     justify-content: space-around;
     padding: 40px 20px;
-    background-color: rgb(190, 190, 190);
+    background-color: #a9a9a9;
   }
   footer div p {
     text-align: center;
@@ -790,4 +927,18 @@
     border-radius: 50%;
     border: 1px solid black;
   }
+}
+
+button {
+  transition: background-color 0.3s ease !important;
+}
+
+button:hover {
+  background-color: #ff3c80 !important;
+  cursor: pointer;
+}
+
+.nav li a:hover,
+.logo a:hover {
+  color: rgb(0, 96, 185);
 }
